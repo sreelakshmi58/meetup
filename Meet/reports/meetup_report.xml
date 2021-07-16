@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <template id="report_meet">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <t t-foreach="docs" t-as="o">
+                        <br></br>
+                        <h1 >Meetup Report</h1>
+                         <table>
+                            <thead>
+                                <tr>
+                                     <td name="td_name_label"><strong>Name:</strong></td>
+                                     <td name="td_name">
+                                    <span t-field="o.name"/>
+                                     </td>
+                                    <br></br>
+                                    </tr>
+                                <tr>
+                                    <td name="td_from_date_label"><strong>From Date:</strong></td>
+                                    <td name="td_from_date">
+                                    <span t-field="o.from_date"/>
+                                </td>
+                                </tr>
+                                 <tr>
+                                    <td name="td_to_date_label"><strong>To Date:</strong></td>
+                                    <td name="td_to_date">
+                                    <span t-field="o.to_date"/>
+                                </td>
+                                </tr>
+                                 <tr>
+                                    <td name="td_contact_ids_label"><strong>Contacts:</strong></td>
+                                    <td name="td_contact_ids">
+                                    <span t-field="o.contact_ids"/>
+                                </td>
+                                </tr>
+
+
+                            </thead>
+                        </table>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

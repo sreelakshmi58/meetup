@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <report
+                id="report_meetup_record"
+                model="meetup.registration"
+                string="Meetup Report"
+                report_type="qweb-pdf"
+                name="Meet.report_meet"
+                file="Meet.report_meet"/>
+</odoo>
